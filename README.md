@@ -2,6 +2,8 @@
 
 ## This app allows users to get all of the functionality of youtube.
 
+Deployed version can be found [here](https://ec-youtube-clone.netlify.app/)!
+
 The app was created using react for the frontend. Javascript and RapidAI were used for the backend. Within the deployed version, users get a recommended home page, they can filter suggested videos by category and search for specific search words in the search bar. Users can also view profiles and see profile information such as subscriber count and videos uploaded by specific profiles.
 
 ![image info](./src/resources/screenshot.png)
