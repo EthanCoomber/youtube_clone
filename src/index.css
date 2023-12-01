@@ -25,8 +25,12 @@ a {
   background-color: transparent;
 }
 
-.category-btn:hover {
+/* .category-btn:hover {
   background-color: #FC1503 !important;
+  color: white !important;
+} */
+.category-btn:hover {
+  background-color: #0d32ea !important;
   color: white !important;
 }
 
