@@ -21,7 +21,7 @@ const ChannelDetail = () => {
 
   return (
     <Box minHeight="95vh">
-      <Box>
+      <Box sx={{ mb: 5 }}>
         <div style={{
           //This gradient was gotten from CSS gradient
           background: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 22%, rgba(0,212,255,1) 100%)",
@@ -31,9 +31,9 @@ const ChannelDetail = () => {
         <ChannelCard channelDetail={channelDetail} marginTop = "-110px"/>
       </Box>
       <Box display="flex" p="2">
-        <Box sx={{ mr: { sm : "100px"}}}>
+        {/* <Box sx={{ mr: { sm : "100px"}}}> */}
           <Videos videos={videos}/>
-        </Box>
+        {/* </Box> */}
       </Box>
     </Box>
   )

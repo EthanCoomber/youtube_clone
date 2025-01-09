@@ -21,8 +21,9 @@ const Feed = () => {
             <Box 
                 sx={{
                     height: {sx: "auto", md: "92vh"},
-                    borderRight: "1px solid #3d3d3d",
-                    px: {sx: 0, md: 2}
+                    borderRight: "1px solid #e3e3e3",
+                    px: {sx: 0, md: 2},
+                    backgroundColor: "#fff"
                 }}
             >
                 <SideBar selectedCategory = {selectedCategory} setSelectedCategory={setSelectedCategory}/>
@@ -31,16 +32,24 @@ const Feed = () => {
                     variant='body2'
                     sx={{
                         mt: 1.5,
-                        color: "#fff"
+                        color: "navy",
+                        opacity: 0.7
                     }}
                 >
                     Copyright EC
                 </Typography>
             </Box>
             <Box p={2} sx={{overflowY: "auto", height: "90vh", flex: 2}}>
-                <Typography variant="h4" fontWeight="bold" mb={2} sx={{color:"white"}}>
+                <Typography variant="h4" fontWeight="bold" mb={2} sx={{color:"navy"}}>
                 {selectedCategory} <span
-                        style={{color: "#183bec"}}
+                        style={{
+                            color: "#F0F0F0",
+                            fontWeight: "bold",
+                            fontSize: "1.1em",
+                            backgroundColor: "#000080",
+                            padding: "0.2em 0.4em",
+                            borderRadius: "4px"
+                        }}
                     >
                         Videos
                     </span>

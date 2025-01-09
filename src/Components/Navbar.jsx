@@ -12,12 +12,12 @@ const Navbar = () => (
         p={2} 
         sx={{ 
             position:  "sticky", 
-            background: '#000', 
+            background: '#fff',
             top: 0, 
             justifyContent: "space-between" 
     }}>
         <Link to="/" style={{ display: "flex", alignItems: "center" }}>
-        <img src={logo} alt="logo" height={45} />
+        <img src={logo} alt="logo" height={45} style={{ marginLeft: "20px" }} />
         </Link>
         <SearchBar />
     </Stack>

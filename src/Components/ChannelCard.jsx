@@ -5,7 +5,7 @@ import { demoProfilePicture } from "../utils/constants"
 const ChannelCard = ({ channelDetail, marginTop }) => (
     <Box
         sx={{
-            boxShadow: 'none',
+            boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
             borderRadius: "20px",
             display: "flex",
             justifyContent: "center",
@@ -13,7 +13,14 @@ const ChannelCard = ({ channelDetail, marginTop }) => (
             width: { xs: '356px', md: '320px'},
             height: "326px",
             margin: "auto",
-            marginTop
+            marginTop,
+            height: "100%",
+            backgroundColor: "#FFFFFF",
+            transition: "all 0.3s ease",
+            "&:hover": {
+                transform: "translateY(-5px)",
+                boxShadow: "0 8px 16px rgba(0,0,0,0.2)"
+            }
         }}
     >
         <Link to={`/channel/${channelDetail?.id?.channelId}`}>
@@ -23,7 +30,7 @@ const ChannelCard = ({ channelDetail, marginTop }) => (
                     flexDirection: "column",
                     justifyContent: "center",
                     textAlign: "center",
-                    color: "#fff"
+                    color: "navy"
                 }}
             >
                 <CardMedia 
@@ -34,16 +41,19 @@ const ChannelCard = ({ channelDetail, marginTop }) => (
                         height: "180px",
                         width: "180px",
                         mb: 2,
-                        border: "1px solid",
-                        color: "#e3e3e3"
+                        border: "2px solid navy",
+                        transition: "transform 0.3s ease",
+                        "&:hover": {
+                            transform: "scale(1.05)"
+                        }
                     }}
                 />
-                <Typography variant="h6">
+                <Typography variant="h6" sx={{fontWeight: "bold"}}>
                     {channelDetail?.snippet?.title}
-                    <CheckCircle sx= {{fontSize: 14, color: "gray", ml: '5px'}}/>
+                    <CheckCircle sx= {{fontSize: 14, color: "navy", ml: '5px'}}/>
                 </Typography>
                 {channelDetail?.statistics?.subscriberCount && (
-                    <Typography>
+                    <Typography sx={{color: "navy", opacity: 0.9}}>
                         {parseInt(channelDetail?.statistics?.subscriberCount).toLocaleString()} Subscribers
                     </Typography>
                 )}
